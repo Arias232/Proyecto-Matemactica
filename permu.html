@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proyecto Final</title>
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">   
+</head>
+
+
+<body>
+    <div class="container" style= "background-color:rgb(18, 228, 228)">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="Principal.html"><img src="matematica.png"></a>
+            </div>
+            <div class="col-md-6">
+                <br>
+                <div class="btn-group">
+
+                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown"
+                         aria-haspopup="true" aria-expanded="false" style="background-color:rgb(12, 12, 12);">  
+                         Primer Modulo 
+                         </button>
+
+                            <div class="dropdown-menu" style="background-color: rgb(173, 219, 240);">
+                                <a class="dropdown-item" href="adiccion.html">Adicción</a>
+                                <a class="dropdown-item" href="multi.html">Multiplicación</a>
+                                <a class="dropdown-item" href="permu.html">Permutaciones</a>
+                                <a class="dropdown-item" href="combi.html">Combinaciones</a>
+                                <a class="dropdown-item" href="conju.html">Teoría de Conjuntos</a>
+                            </div>
+                </div>
+
+            
+
+                <div class="btn-group">
+                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown"
+                         aria-haspopup="true" aria-expanded="false" style="background-color:rgb(12, 12, 12);">  Segundo Modulo </button>
+                            <div class="dropdown-menu" style="background-color: rgb(173, 219, 240);">
+                                <a class="dropdown-item" href="induccion.html">Inducción matemática</a>
+                                <a class="dropdown-item" href="mcd.html">MCD</a>
+                                <a class="dropdown-item" href="grafos.html">Teoría de Grafos</a>
+                            </div>
+                </div>
+
+
+                <div class="btn-group">
+                    <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" data-toggle="dropdown"
+                         aria-haspopup="true" aria-expanded="false" style="background-color:rgb(9, 25, 247);">  Exámen Final </button>
+                            <div class="dropdown-menu" style="background-color: rgb(173, 219, 240);">
+                                <a class="dropdown-item" href="arboles.html">Arboles</a>
+                                <a class="dropdown-item" href="algebra.html">Algebra Vectorial</a>
+                                <a class="dropdown-item" href="probabilidad.html">Probabilidad</a>
+                            </div>
+                </div>
+
+        </div>
+    </div>
+</div>
+                
+
+     
+
+
+
+
+
+
+
+
+
+
+
+
+    <div= class="permu">
+        <div class="vision" >
+   
+         
+                <h1 style="text-align:center">Permutaciones:</h1>
+    
+                
+                <h1 style="text-align: center;">Tipos de permutaciones:</h1>
+                <h4>Existen dos tipos diferentes de permutaciones: Las que se pueden repetir y sin repetición</h4>
+                <br>
+                <h2>Permutacines con repetición:</h3>
+                <h4>Si tienes n cosas para elegir y eliges r de ellas, las permutaciones posibles son: n × n × ... (r veces) = nr </h4>
+                
+                <h1 style="text-align:center">Ejemplo:</h1>
+
+                <h2>Por ejemplo en la cerradura de arriba, hay 10 números para elegir (0,1,...,9) y eliges 3 de ellos: </h2>
+                <h1>10 × 10 × ... (3 veces) = 103 = 1000 permutaciones</h1>
+                <br>
+        
+                <br>
+                <h2>Permutaciones sin repetición:</h3>
+                    <h3>Con las permutacions sin repeición se reduce el número de las opciones en cada paso.</h3>
+                    <h1 style="text-align:center">Ejemplo:</h1>
+                    <h2>¿cómo podrías ordenar 16 bolas de billar?</h2>
+                    <h1>16 × 15 × 14 × 13 ... = 20.922.789.888.000</h1>
+            
+                    <div style="text-align: center;">
+                        <img src="permu.jfif" height="300px"; width="650px">
+
+                    <br>
+                    <br>
+                    <br>
+                      </div>
+                      
+
+
+
+
+
+                      
+        <h1 style="text-align:center">Ejercicio:</h1>
+
+        <img src="permutacionejemplo.jfif" height="300px"; width="550">
+
+
+        
+        <!DOCTYPE html>
+        <html lang="en">
+        <head>
+
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content = "IE=edge">
+            <meta name="viewport" content="width-device-width, initial-sacel=1.0">
+            <style> 
+            #img{
+                display: none;
+            }
+            </style>
+        </head>
+        <body>
+            <button id="boton" onclick="mostrar();">Mostrar Respuesta</button>
+            <h5 id="boton" onclick="mostrar();">Desplazate hacia abajo una vez presiones mostrar respuesta</h5>
+
+                <button id="boton" onclick="ocultar();">Ocultar Respuesta</button>
+
+                <div id="img">
+                <img src="permutacionresuelto.jfif"  height="300px"; width="550" >
+            </div>
+
+            <script>
+                function mostrar(){
+                    document.getElementById('img').style.display = 'block';
+                }
+
+
+                function ocultar(){
+                    document.getElementById('img').style.display = 'none';
+                }
+            </script>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+
+        </body>
+
+
+
+
+        </html>
+
+
+                       
+                   
+        
+
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
+    
